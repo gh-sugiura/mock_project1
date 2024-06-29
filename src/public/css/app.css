@@ -1,0 +1,29 @@
+.header {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    font-weight: bold;
+    padding-left: 50px;
+}
+
+.header_text {
+    font-size: 40px;
+}
+
+.footer {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+    font-weight: bold;
+}
+
+.footer_text {
+    font-size: 20px;
+}
