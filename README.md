@@ -1,4 +1,6 @@
 # Atte（アット）
+![トップページ](src/top_page.jpg "トップページ")
+トップページ
 
 
 ## 背景・目的
@@ -50,6 +52,14 @@
 3. .env.exampleファイルから.envファイルを作成し、環境変数を設定
 4. `php artisan key:generate`：アプリケーションキーの生成
 5. `php artisan migrate`：マイグレーションの実行
-6. `php artisan db:seed`：シーディングの実行 
+6. `php artisan db:seed`：シーディングの実行
 
-&ensp;※`sudu chmod -R 777 *`：ファイルアクセス権限を付与
+**Fortifyの導入**
+1. `docker-compose exec php bash`：PHPコンテナにログイン
+2. `composer require laravel/fortify`
+3. `php artisan vendor:publish --provider="Laravel\Fortify\FortifyServiceProvider"`
+4. `php artisan migrate`
+5. 
+
+
+&ensp;※`sudo chmod -R 777 *`：ファイルアクセス権限を付与
