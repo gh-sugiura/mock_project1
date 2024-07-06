@@ -25,11 +25,11 @@
         <div class="finish_work">
             <button class="finish_work_button" type="submit">勤務終了</button>
         </div>
-        <div class="start_rest">
-            <button class="start_rest_button" type="submit">休憩開始</button>
+        <div class="start_break">
+            <button class="start_break_button" type="submit">休憩開始</button>
         </div>
-        <div class="finish_rest">
-            <button class="finish_rest_button" type="submit">休憩終了</button>
+        <div class="finish_break">
+            <button class="finish_break_button" type="submit">休憩終了</button>
         </div>
     </div>
 @endsection

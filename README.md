@@ -54,12 +54,4 @@
 5. `php artisan migrate`：マイグレーションの実行
 6. `php artisan db:seed`：シーディングの実行
 
-**Fortifyの導入**
-1. `docker-compose exec php bash`：PHPコンテナにログイン
-2. `composer require laravel/fortify`
-3. `php artisan vendor:publish --provider="Laravel\Fortify\FortifyServiceProvider"`
-4. `php artisan migrate`
-5. 
-
-
 &ensp;※`sudo chmod -R 777 *`：ファイルアクセス権限を付与

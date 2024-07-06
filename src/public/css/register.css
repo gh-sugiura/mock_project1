@@ -4,7 +4,7 @@ body {
 
 .register-form__content {
     margin: 0 auto;
-    max-width: 1000px;
+    max-width: 420px;
 }
 
 .register-form__heading {
@@ -19,7 +19,7 @@ body {
 
 .form_register {
     text-align: center;
-    /* width: 736px; */
+    /* width: 420px; */
     /* height: 644px; */
 }
 
@@ -28,7 +28,7 @@ body {
 .register_password1,
 .register_password2,
 .register_button {
-    margin-top: 30px;
+    margin-top: 25px;
 }
 
 .register_name input,
@@ -44,6 +44,12 @@ body {
     border: 2px solid gray;
     border-radius: 5px;
 
+}
+
+.error_message {
+    font-size: 14px;
+    color: red;
+    text-align: left;
 }
 
 .register_button_text {

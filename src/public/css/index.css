@@ -30,8 +30,8 @@ body {
 
 .start_work,
 .finish_work,
-.start_rest,
-.finish_rest {
+.start_break,
+.finish_break {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,8 +39,8 @@ body {
 
 .start_work_button,
 .finish_work_button,
-.start_rest_button,
-.finish_rest_button {
+.start_break_button,
+.finish_break_button {
     width: 460px;
     height: 160px;
     font-size: 25px;

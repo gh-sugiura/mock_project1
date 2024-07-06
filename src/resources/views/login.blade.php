@@ -12,13 +12,13 @@
             <p>ログイン</p>
         </div>
         
-        <form class="form_login" action="/login" method="get">
+        <form class="form_login" action="/" method="post">
             @csrf
             <div class="login_email">
                 <input type="email" name="email" placeholder="メールアドレス" value="{{ old('email') }}"/>
             </div>
             <div class="login_password1">
-                <input type="text" name="password1" placeholder="パスワード" />
+                <input type="password" name="password" placeholder="パスワード" />
             </div>
             <div class="login_button">
                 <button class="login_button_text" type="submit">ログイン</button>
