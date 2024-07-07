@@ -1,8 +1,23 @@
+.header_link_inner {
+    display: flex;
+}
+
 .header_link_inner a {
     text-decoration: none;
     font-size: 16px;
     color: black;
     padding-right: 50px;
+    cursor: pointer;
+}
+
+.header_link_logout {
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    background-color: white;
+    border: none;
+    padding-right: 20px;
+    cursor: pointer;
 }
 
 body {

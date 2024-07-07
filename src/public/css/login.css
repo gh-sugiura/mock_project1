@@ -4,7 +4,7 @@ body {
 
 .login-form__content {
     margin: 0 auto;
-    max-width: 1000px;
+    max-width: 420px;
 }
 
 .login-form__heading {
@@ -24,13 +24,13 @@ body {
 }
 
 .login_email,
-.login_password1,
+.login_password,
 .login_button {
     margin-top: 30px;
 }
 
 .login_email input,
-.login_password1 input {
+.login_password input {
     width: 420px;
     height: 45px;
     font-size: 16px;
@@ -39,6 +39,12 @@ body {
     padding-left: 20px;
     border: 2px solid gray;
     border-radius: 5px;
+}
+
+.error_message {
+    font-size: 14px;
+    color: red;
+    text-align: left;
 }
 
 .login_button_text {

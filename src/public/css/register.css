@@ -25,16 +25,16 @@ body {
 
 .register_name,
 .register_email,
-.register_password1,
-.register_password2,
+.register_password,
+.register_password_confirmation,
 .register_button {
     margin-top: 25px;
 }
 
 .register_name input,
 .register_email input,
-.register_password1 input,
-.register_password2 input {
+.register_password input,
+.register_password_confirmation input {
     width: 420px;
     height: 45px;
     font-size: 16px;

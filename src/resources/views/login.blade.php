@@ -12,14 +12,28 @@
             <p>ログイン</p>
         </div>
         
-        <form class="form_login" action="/" method="post">
+        <form class="form_login" action="/login" method="post">
             @csrf
             <div class="login_email">
                 <input type="email" name="email" placeholder="メールアドレス" value="{{ old('email') }}"/>
             </div>
-            <div class="login_password1">
+            @error("email")
+                <div class="error_message">
+                    {{ $message }} 
+                </div>
+            @enderror
+
+
+            <div class="login_password">
                 <input type="password" name="password" placeholder="パスワード" />
             </div>
+            @error("password")
+                <div class="error_message">
+                    {{ $message }} 
+                </div>
+            @enderror
+
+            
             <div class="login_button">
                 <button class="login_button_text" type="submit">ログイン</button>
             </div>

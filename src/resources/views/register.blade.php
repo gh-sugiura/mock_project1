@@ -13,7 +13,7 @@
         </div>
         
 
-        <form class="form_register" action="/login" method="post">
+        <form class="form_register" action="/register" method="post">
             @csrf
             <div class="register_name">
                 <input type="text" name="name" placeholder="名前" value="{{ old('name') }}"/>                
@@ -35,7 +35,7 @@
             @enderror
 
 
-            <div class="register_password1">
+            <div class="register_password">
                 <input type="password" name="password" placeholder="パスワード" />
             </div>
             @error("password")
@@ -45,7 +45,7 @@
             @enderror
 
 
-            <div class="register_password2">
+            <div class="register_password_confirmation">
                 <input type="password" name="password_confirmation" placeholder="確認用パスワード" />
             </div>
             @error("password_confirmation")

@@ -10,7 +10,10 @@
     <div class="header_link_inner">
         <a href="/" class="header_link_home">ホーム</a>
         <a href="/attendance" class="header_link_attendance">日付一覧</a>
-        <a href="/login" class="header_link_login">ログアウト</a>
+        <form class="header_link_logout" action="/logout" method="post">
+            @csrf
+            <button class="header_link_logout">ログアウト</button>
+        </form>
     </div>
 @endsection
 
