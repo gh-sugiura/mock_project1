@@ -29,7 +29,7 @@ return [
         'array'   => ':attributeの項目は、:min個から:max個にしてください。',
     ],
     'boolean'              => ":attributeには、'true'か'false'を指定してください。",
-    'confirmed'            => ':attributeと:attribute確認が一致しません。',
+    'confirmed'            => ':attributeと確認用:attributeが一致しません。',
     'date'                 => ':attributeは、正しい日付ではありません。',
     'date_equals'          => ':attributeは:dateに等しい日付でなければなりません。',
     'date_format'          => ":attributeの形式は、':format'と合いません。",
@@ -93,7 +93,8 @@ return [
     'not_in'               => '選択された:attributeは、有効ではありません。',
     'not_regex'            => ':attributeの形式が無効です。',
     'numeric'              => ':attributeには、数字を指定してください。',
-    'password'             => 'パスワードが正しくありません。',
+    // change パスワード→:attribute
+    'password'             => ':attributeが正しくありません。',
     'present'              => ':attributeが存在している必要があります。',
     'regex'                => ':attributeには、有効な正規表現を指定してください。',
     'required'             => ':attributeは、必ず入力してください。',
@@ -151,9 +152,4 @@ return [
         'email' => 'メールアドレス',
         'password' => 'パスワード',
     ],
-
-    // line 106
-    // 'others' => [
-    //     'password_confirmation' => '確認用パスワード',
-    // ],
 ];

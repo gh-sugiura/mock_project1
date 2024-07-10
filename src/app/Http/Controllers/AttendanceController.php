@@ -15,22 +15,22 @@ class AttendanceController extends Controller
     }
 
 
-    public function get_register()
-    {
-        return view("register");
-    }
-
-
-    public function get_login()
-    {
-        return view("login");
-    }
-
-
     public function get_attendance()
     {
         return view("attendance");
     }
+
+
+    // public function get_register()
+    // {
+    //     return view("register");
+    // }
+
+
+    // public function get_login()
+    // {
+    //     return view("login");   
+    // }
 
 
     // public function post_register(Request $request)
@@ -50,9 +50,6 @@ class AttendanceController extends Controller
     // {
     //     return view("login");
     // }
-
-
-    
 }
 
 

@@ -6,10 +6,10 @@ use App\Http\Controllers\AttendanceController;
 
 Route::middleware('auth')->group(function () {
     Route::get('/', [AttendanceController::class, 'get_index']);
-});   
-Route::get('/register', [AttendanceController::class, 'get_register']);
-Route::get('/login', [AttendanceController::class, 'get_login']);
+});
 Route::get('/attendance', [AttendanceController::class, 'get_attendance']);
+// Route::get('/register', [AttendanceController::class, 'get_register']);
+// Route::get('/login', [AttendanceController::class, 'get_login']) -> name('login');
 
 
 // fortifyのルーティングを利用

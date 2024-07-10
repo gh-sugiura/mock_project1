@@ -19,7 +19,7 @@
 
 @section("content")
     <div class="heading_message">
-        <p>2024-07-01</p>
+        <input type="date" class="heading_message_date" name="date" value="<?php echo date('Y-m-d'); ?>">    
     </div>
     <table class="table_attendacce">
         <tr class="table_header">

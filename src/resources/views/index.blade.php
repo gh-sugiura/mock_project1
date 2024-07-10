@@ -19,7 +19,8 @@
 
 @section("content")
     <div class="heading_message">
-        <p>○○○○さんお疲れ様です！</p>
+        <p>{{Auth::user()->name}}さんお疲れ様です！</p>
+        {{-- <p>{{$user["name"]}}さんお疲れ様です！</p> --}}
     </div>
     <div class="layout_button">
         <div class="start_work">
