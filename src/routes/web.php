@@ -8,8 +8,12 @@ Route::middleware('auth')->group(function () {
     Route::get('/', [AttendanceController::class, 'get_index']);
 });
 Route::get('/attendance', [AttendanceController::class, 'get_attendance']);
-// Route::get('/register', [AttendanceController::class, 'get_register']);
-// Route::get('/login', [AttendanceController::class, 'get_login']) -> name('login');
+Route::post('/start_work', [AttendanceController::class, 'start_work']);
+Route::post('/finish_work', [AttendanceController::class, 'finish_work']);
+Route::post('/start_rest', [AttendanceController::class, 'start_rest']);
+Route::post('/finish_rest', [AttendanceController::class, 'finish_rest']);
+Route::get('/login', [AttendanceController::class, 'get_login']) -> name('login');
+Route::get('/register', [AttendanceController::class, 'get_register']);
 
 
 // fortifyのルーティングを利用

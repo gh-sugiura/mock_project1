@@ -29,12 +29,18 @@
             <th>休憩時間</th>
             <th>勤務時間</th>
         </tr>
-        <tr class="table_content">
-            <td>テスト太郎</td>
-            <td>10:00:00</td>
-            <td>20:00:00</td>
-            <td>00:30:00</td>
-            <td>09:30:00</td>
-        </tr>
+
+        @foreach ($attendances as $attendance)
+            <tr class="table_content">
+                <td>{{$attendance->getName()}}</td>
+                <td>{{$attendance["start_work"]}}</td>
+                <td>{{$attendance["finish_work"]}}</td>
+                <td>00:30:00</td>
+                <td>{{$attendance->workTime()}}</td>
+            </tr>
+        @endforeach
     </table>
+    <div class="pagenation">
+        {{$attendances->links()}}
+    </div>
 @endsection

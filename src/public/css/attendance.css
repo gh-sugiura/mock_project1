@@ -50,3 +50,22 @@ body {
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
 }
+
+.pagenation {
+    /* display: flex; */
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+    color: blue;
+    /* color: #2384CF; */
+    /* border: 1px solid gray; */
+}
+
+.pagenation li {
+    display: inline-block;
+}
+
+/* svg.w-5.h-5 {
+    width: 30px;
+    height: 30px;
+} */

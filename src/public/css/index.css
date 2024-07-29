@@ -30,12 +30,26 @@ body {
     font-size: 30px;
     font-weight: bold;
     margin-top: 30px;
+    margin-bottom: 0px;
 }
 
+.start_work_alert {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    color: red;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.heading_message_text,
+.start_work_alert_text {
+    margin-bottom: 0px;
+}
 
 .layout_button {
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 20px;
     width: 1000px;
     height: 400px;
     display: grid;
@@ -45,8 +59,8 @@ body {
 
 .start_work,
 .finish_work,
-.start_break,
-.finish_break {
+.start_rest,
+.finish_rest {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,14 +68,40 @@ body {
 
 .start_work_button,
 .finish_work_button,
-.start_break_button,
-.finish_break_button {
+.start_rest_button,
+.finish_rest_button {
     width: 460px;
     height: 160px;
     font-size: 25px;
     font-weight: bold;
     background-color: white;
+    border: solid 1px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dummy_start_work,
+.dummy_finish_work,
+.dummy_start_rest,
+.dummy_finish_rest {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dummy_start_work_button,
+.dummy_finish_work_button,
+.dummy_start_rest_button,
+.dummy_finish_rest_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 460px;
+    height: 160px;
+    font-size: 25px;
+    font-weight: bold;
+    color: lightgray;
+    background-color: white;
     border: none;
     border-radius: 3px;
-    cursor: pointer;
 }

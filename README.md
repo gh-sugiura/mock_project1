@@ -36,7 +36,7 @@
 
 
 ## ER図
-<!-- ![ER図](er.drawio.png) -->
+![ER図](/src/er.drawio.png)
 
 
 ## 環境構築
