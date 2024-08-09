@@ -19,8 +19,14 @@
 
 @section("content")
     <div class="heading_message">
-        <input type="date" class="heading_message_date" name="date" value="<?php echo date('Y-m-d'); ?>">    
+        <form action="?" class="heading_message_form" type="submit" method="post">
+            @csrf
+            <button class="heading_message_back_buttom" formaction="search_day_back"> < </button>
+            <input class="heading_message_date" type="text" name="search_day" value="{{$search_day}}" readonly></input>
+            <button class="heading_message_forward_buttom" formaction="/search_day_forward"> > </button>
+        </form>
     </div>
+
     <table class="table_attendacce">
         <tr class="table_header">
             <th>名前</th>

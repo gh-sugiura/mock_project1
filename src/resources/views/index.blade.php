@@ -23,7 +23,7 @@
     </div>
     @if(session("message"))
         <div class="start_work_alert">
-            <p class="start_work_alert_text">{{ session("message") }}</p>
+            <p class="start_work_alert_text">{{session("message")}}</p>
         </div>
     @endif
 
