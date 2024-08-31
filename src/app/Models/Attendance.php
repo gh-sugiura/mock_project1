@@ -15,28 +15,15 @@ class Attendance extends Model
     ];
 
 
+    public function rests()
+    {
+        return $this->hasMany("App\Models\Rest");
+    }
+
+
     public function user()
     {
         return $this->belongsTo(User::class);
-    }
-
-
-    public function getName()
-    {
-        return optional($this->user)->name;
-    }
-
-
-    public function workTime()
-    {
-        if(isset($this->finish_work)) {
-            $work_diff = (strtotime($this->finish_work) - strtotime($this->start_work));
-            $work_hour = floor($work_diff / 3600);
-            $work_minute = floor(($work_diff % 3600) / 60);
-            $work_second = floor($work_diff % 60);
-            return $work_hour . ":" . $work_minute . ":" . $work_second;
-        }
-        
     }
 }
 

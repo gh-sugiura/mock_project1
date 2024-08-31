@@ -9,7 +9,9 @@
 @section("link")
     <div class="header_link_inner">
         <a href="/" class="header_link_home">ホーム</a>
-        <a href="/attendance" class="header_link_attendance">日付一覧</a>
+        <a href="/attendance_date" class="header_link_attendance">日付別勤怠</a>
+        <a href="/attendance_user" class="header_link_attendance_user">ユーザー別勤怠</a>
+        <a href="/register_user" class="header_link_register_user">ユーザー一覧</a>
         <form class="header_link_logout" action="/logout" method="post">
             @csrf
             <button class="header_link_logout">ログアウト</button>
@@ -28,7 +30,7 @@
     @endif
 
     <div class="layout_button">
-        @if (empty($stamp_attendance) || isset($stamp_attendance->finish_work))
+        @if (empty($stamp_attendance) or isset($stamp_attendance->finish_work))
             <form class="start_work" action="/start_work" method="post">
                 @csrf
                 <button class="start_work_button" type="submit">勤務開始</button>
@@ -44,8 +46,8 @@
             </div>
 
 
-        @elseif (isset($stamp_attendance->start_work) && is_null(optional($stamp_rest)->start_rest) 
-                || isset($stamp_rest->finish_rest))
+        @elseif ((isset($stamp_attendance->start_work) and is_null(optional($stamp_rest)->start_rest)) 
+                or isset($stamp_rest->finish_rest))
             <div class="dummy_start_work">
                 <p class="dummy_start_work_button">勤務開始</p>
             </div>

@@ -38,7 +38,7 @@
                 <button class="login_button_text" type="submit">ログイン</button>
             </div>
             <div class="login_text">
-                <p class="text">アカウントをお持ちの方はこちらから</p>
+                <p class="text">新規会員登録はこちらから</p>
             </div>
             <div class="login_register">
                 <a href="/register" class="login_register_link">会員登録</a>

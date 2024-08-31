@@ -12,7 +12,9 @@
 * 打刻ページ：http://localhost/
 * 会員登録ページ：http://localhost/register
 * ログインページ：http://localhost/login
-* 日付別勤怠ページ：http://localhost/attendance
+* 日付別勤怠ページ：http://localhost/attendance_date
+* ユーザー別勤怠ページ：http://localhost/attendance_user
+* ユーザー一覧ページ：http://localhost/register_user
 * phpMyAdmin：http://localhost:8080/
 
 

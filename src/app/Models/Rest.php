@@ -9,17 +9,11 @@ class Rest extends Model
 {
     use HasFactory;
     protected $fillable = [
-        "user_id",
-        // "attendance_id",
+        // "user_id",
+        "attendance_id",
         "start_rest",
         "finish_rest",
     ];
-
-
-    public function user()
-    {
-        return $this->belongsTo(User::class);
-    }
 
 
     public function attendance()
@@ -30,7 +24,7 @@ class Rest extends Model
 
     // public function restTime()
     // {
-    //     $rest_time = Rest::select('post_id')
+        // $rest_time = Rest::select('post_id')
     //     ->selectRaw('SUM(amount) AS total_amount')
     //     ->groupBy("created_at")
     //     ->groupBy("uesr_id")

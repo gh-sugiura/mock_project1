@@ -2,7 +2,7 @@
 
 
 @section("css")
-    <link rel="stylesheet" href="{{asset('css/attendance.css')}}">
+    <link rel="stylesheet" href="{{asset('css/attendance_user.css')}}">
 @endsection
 
 
@@ -21,17 +21,18 @@
 
 @section("content")
     <div class="heading_message">
-        <form action="attendance_date" class="heading_message_form" type="submit" method="get">
+        <form action="attendance_user" class="heading_message_form" type="submit" method="get">
             @csrf
-            <button class="heading_message_back_buttom" type="submit" name="button" value="back"> < </button>
-            <input class="heading_message_date" type="text" name="search_day" value="{{$search_day}}" readonly></input>
-            <button class="heading_message_forward_buttom" type="submit" name="button" value="forward"> > </button>
+            <input class="heading_message_name" type="search" name="search_name" placeholder="検索する名前を入力" spellcheck="false"></input>
+            <button class="heading_message_buttom" type="submit" name="button" value="search">検索</button>
+            <button class="heading_message_buttom" type="submit" name="button" value="all">全表示</button>
         </form>
     </div>
 
     <table class="table_attendacce">
         <tr class="table_header">
             <th>名前</th>
+            <th>勤務日</th>
             <th>勤務開始</th>
             <th>勤務終了</th>
             <th>休憩時間</th>
@@ -41,6 +42,7 @@
         @foreach ($attendances as $attendance)
             <tr class="table_content">
                 <td>{{$attendance["name"]}}</td>
+                <td>{{$attendance["work_date"]}}</td>
                 <td>{{$attendance["start_work"]}}</td>
                 <td>{{$attendance["finish_work"]}}</td>
                 <td>{{$attendance["time_rest"]}}</td>
